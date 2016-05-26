@@ -1,1 +1,1 @@
-#Example 2 : displaying as flex and inline-flex
+#Example 2 : flex and inline-flex Container
