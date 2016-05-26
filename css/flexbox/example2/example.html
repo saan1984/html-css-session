@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../../../assets/theme.css">
+    <style>
+        .student-container-1{
+            display: flex;
+            border: 1px solid red;
+        }
+        .student-container-2{
+            display: inline-flex;
+            border: 1px solid red;
+        }
+        .student {
+            background: royalblue;
+            margin: 10px;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>FlexBox Container and Items</h1>
+</div>
+<div class="section description">
+    <ul>
+        <li class="item">Flexbox container can be display as inline or block element</li>
+        <li class="item">inline-flex value makes the container to be have as INLINE element.</li>
+        <li class="item">flex value makes the container to be have as BLOCK element.</li>
+    </ul>
+</div>
+<div class="section example">
+    <h2>Example 1: container BLOCK element</h2>
+    <!--Example starts here -->
+    <div class="student-container-1">
+        <div class="student">John</div>
+        <div class="student">Max</div>
+        <div class="student">Smith</div>
+    </div>
+    <h2>Example 2: container INLINE element</h2>
+    <div class="student-container-2">
+        <div class="student">John</div>
+        <div class="student">Max</div>
+        <div class="student">Smith</div>
+    </div>
+    <!--Example end here -->
+
+    <div class="section example-description">
+        <ul>
+            <li class="item">BLOCK Elements: example1 container as BLOCK element with 100% width.</li>
+            <li class="item">INLINE Element: example2 container as INLINE element with content based width.</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
