@@ -3,13 +3,40 @@
 <head>
     <link rel="stylesheet" href="../../../assets/theme.css">
     <style>
-        .student-container{
-            display: flex;
-            border: 1px solid red;
-        }
         .student {
             background: royalblue;
             margin: 10px;
+            color:white;
+        }
+        .student-container-1{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid red;
+        }
+        .student-container-2{
+            display: flex;
+            flex-direction: row;
+            border: 1px solid red;
+        }
+        .student-container-3{
+            display: flex;
+            flex-direction: row-reverse;
+            border: 1px solid red;
+        }
+        .student-container-4{
+            display: flex;
+            flex-direction: column-reverse;
+            border: 1px solid red;
+        }
+        .student-container-5{
+            display: flex;
+            flex-wrap: wrap;
+            width: 300px;
+            border: 1px solid red;
+        }
+        .student-container-5 .student {
+            background: orange;
+            width : 125px;
             color:white;
         }
     </style>
@@ -17,18 +44,43 @@
 <body>
 
 <div class="header">
-    <h1>FlexBox Container and Items</h1>
+    <h1>Flex direction and wrap</h1>
 </div>
 <div class="section description">
     <ul>
-        <li class="item">Flexbox is a new feature in CSS3 for creating layout for pages.</li>
-        <li class="item">There are 2 important terminology Flex box container and items.</li>
+        <li class="item">Flexbox direction can be arranged as row, column, row-reverse, column-reverse</li>
+        <li class="item">we can wrap the items to next line using flex-wrap attribute.</li>
     </ul>
 </div>
 <div class="section example">
-    <h2>Example</h2>
+    <h2>Example1: Column wise</h2>
     <!--Example starts here -->
-    <div class="student-container">
+    <div class="student-container-1">
+        <div class="student">John</div>
+        <div class="student">Max</div>
+        <div class="student">Smith</div>
+    </div>
+    <h2>Example2: Row wise</h2>
+    <div class="student-container-2">
+        <div class="student">John</div>
+        <div class="student">Max</div>
+        <div class="student">Smith</div>
+    </div>
+    <h2>Example3: Row in reverse</h2>
+    <div class="student-container-3">
+        <div class="student">John</div>
+        <div class="student">Max</div>
+        <div class="student">Smith</div>
+    </div>
+    <h2>Example4: Column in reverse</h2>
+    <div class="student-container-4">
+        <div class="student">John</div>
+        <div class="student">Max</div>
+        <div class="student">Smith</div>
+    </div>
+
+    <h2>Example5: wrap</h2>
+    <div class="student-container-5">
         <div class="student">John</div>
         <div class="student">Max</div>
         <div class="student">Smith</div>
@@ -37,8 +89,8 @@
 
     <div class="section example-description">
         <ul>
-            <li class="item">Container: Red border element.</li>
-            <li class="item">Item: John, Max and smith are items.</li>
+            <li class="item">example1, example2, example3, example4 is about flex direction</li>
+            <li class="item">example5: Flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property.</li>
         </ul>
     </div>
 </div>
