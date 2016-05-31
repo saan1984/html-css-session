@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <link rel="stylesheet" href="../../../assets/theme.css">
+    <title>Welcome to Bootcamp</title>
+    <style type=”text/css”>
+        h1 {color:red}
+    </style>
+</head>
+
+<body>
+<div class="header">
+    <h1>Basic HTML Tags</h1>
+</div>
+
+<div class="section description">
+    <ul>
+        <li class="item">We'll cover Table and Form Tags Here</li>
+    </ul>
+</div>
+
+<div class="section example">
+    <h2>Example 1</h2>
+    <!--Example starts here -->
+    <hr/>
+    <table border="1" align="center" width="50%">
+        <caption>
+            My Course Details !!
+        </caption>
+        <tr>
+            <th>#</th>
+            <th>Course</th>
+            <th>Duration</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>HTML</td>
+            <td>1 Hour</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>CSS</td>
+            <td>30 Mins</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Assignment</td>
+            <td>30 Mins</td>
+        </tr>
+    </table>
+    <hr/>
+    <!--Example end here -->
+
+    <div class="section example-description">
+        <ul>
+            <li class="item">Align is for alignment of the table. </li>
+            <li class="item">You can add width, height, border etc. to the .table</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section example">
+    <h2>Example 2</h2>
+    <!--Example starts here -->
+    <hr/>
+    <form action="#" method="Post">
+        <b>Please Fill Your Details</b><br />
+        <p><b>User Name</b><br />
+            <input type="text" name="username" size="40" maxlength="15"/><br />
+        <p><b>Password</b><br />
+            <input type="password" name="password" size="40" maxlength="20"/><br />
+        <p><b>Gender</b><br />
+            <input type="radio" name="radioinput" value="Male" />Male
+            <input type="radio" name="radioinput" value="Female" />Female<br />
+        <p><b>Favourite Sports</b><br />
+            <input type="checkbox" name="checkboxinput" value="Cricket" />Cricket
+            <input type="checkbox" name="checkboxinput" value="Badminton" />Badminton
+            <input type="checkbox" name="checkboxinput" value="Football" />Football
+            <input type="checkbox" name="checkboxinput" value="Boxing" />Boxing<br />
+        <p><b>Select Course</b><br />
+            <select name="selectinput">
+                <option value="htmlselect">HTML</option>
+                <option value="cssselect">CSS</option>
+                <option value="jsselect">JavaScript</option>
+            </select><br />
+        <p><b>Feedback</b><br />
+            <textarea cols=40 rows=10 name="feedback">Please Fill Your Feedback Here</textarea><br />
+        <p><input type="submit" name=submit" value="Submit Form">
+            <input type="hidden" name="submitted" value="TRUE" />
+    </form>
+    <hr/>
+    <!--Example end here -->
+
+    <div class="section example-description">
+        <ul>
+            <li class="item">Input type password will display text in astrocks</li>
+            <li class="item">You can pass extra value along with the form with help of hidden input type.</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
+
