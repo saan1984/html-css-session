@@ -1,1 +1,1 @@
-#Example1 : More HTML Elements
+#Example2 : Image, Hyperlink and Lists Tags
