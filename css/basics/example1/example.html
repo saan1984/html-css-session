@@ -22,6 +22,9 @@
         .marginText{
             margin:10px;
         }
+        .clear{
+            clear:both;
+        }
     </style>
 </head>
 <body>
@@ -76,18 +79,17 @@
 <div class="section example">
     <h2>Example 3 </h2>
     <!--Example starts here -->
-    <div style="display: inline; border:1px solid red;">
-        <div>John</div>
-        <div>Max</div>
-        <div>Smith</div>
+    <div style="border:1px solid red;">
+        <img src="../../../assets/catImage.jpg" width="100" height="100" alt="Image of Cat" style="float:left"/>
+        <p>This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph.</p>
+        <p class="clear">This is another paragraph. This is another paragraph. This is another paragraph. This is another paragraph. This is another paragraph. </p>
     </div>
     <!--Example end here -->
 
     <div class="section example-description">
         <ul>
-            <li class="item">Padding is applied as 15px for John.</li>
-            <li class="item">Margin is applied as 10px for Smith.</li>
-            <li class="item">Width is applied as 80% for the div.</li>
+            <li class="item">Image is float right.</li>
+            <li class="item">Clear right is applied on another paragraph.</li>
         </ul>
     </div>
 </div>
