@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../assets/theme.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .calculator-container{
+            display:flex;
+            flex-wrap: wrap;
+            flex: 0 1 60%;
+            width:300px;
+        }
+        .buttons,.result{
+            display: flex;
+            flex-wrap: wrap;
+            flex: 0 1 100%;
+        }
+        .result{
+            height: 50px;
+            border: 1px solid black;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 1.5em;
+            background: #000;
+            color:#fff;
+            padding:0 10px;
+        }
+        .button{
+            display:flex;
+            flex: 0 1 25%;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            border: 1px solid black;
+            border-top:none;
+            border-left:none;
+            cursor: pointer;
+            background: -webkit-linear-gradient(top,#d2d2d2,#ddd);
+            font-size:2em;
+        }
+        .button:nth-child(4n+1){
+            border-left: 1px solid black;
+        }
+        .button:nth-child(4n),.button:last-child{
+            background: #f98110;
+            color: #fff;
+        }
+        .zero-btn{
+            flex-grow: 2;
+        }
+        .doubleBordered{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Workshop: Calulator UI</h1>
+</div>
+<div class="section description">
+    <ul>
+        <li class="item">Layout is done using FlexBox.</li>
+        <li class="item">button styles using n-th child.</li>
+    </ul>
+</div>
+<div class="section example">
+    <h2>Example</h2>
+    <!--Example starts here -->
+    <div class="calculator-container">
+        <div class="result">0</div>
+        <div class="buttons">
+            <span class="button resetBtn">AC</span>
+            <span class="button negative operator">+/-</span>
+            <span class="button operator percent">%</span>
+            <span class="button operator">/</span>
+            <span class="button number">7</span>
+            <span class="button number">8</span>
+            <span class="button number">9</span>
+            <span class="button operator">*</span>
+            <span class="button number">4</span>
+            <span class="button number">5</span>
+            <span class="button number">6</span>
+            <span class="button operator">-</span>
+            <span class="button number">1</span>
+            <span class="button number">2</span>
+            <span class="button number">3</span>
+            <span class="button operator">+</span>
+            <span class="button number zero-btn">0</span>
+            <span class="button number dot">.</span>
+            <span class="button  operator">=</span>
+        </div>
+    </div>
+    <!--Example end here -->
+    <div class="section example-description">
+        <ul>
+            <li class="item">Calculator is only UI based.</li>
+            <li class="item">No javascript is included.</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
