@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../../../assets/theme.css">
+    <style type="text/css">
+        .dispBlock{
+            display: block;
+        }
+        .dispInline{
+            display: inline;
+        }
+
+        #divSection{
+            border:1px solid green;
+            width:80%;
+        }
+
+        .paddingText{
+            padding:15px;
+        }
+
+        .marginText{
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Basics of CSS (Cascading Style Sheets)</h1>
+</div>
+<div class="section description">
+    <ul>
+        <li class="item">Here we'll cover the styles - Display, Border, Width, Padding, Margin, Float (left, right, clear)</li>
+        <li class="item">Inline Styles - The CSS styles that are applied to one element using the style attribute.</li>
+        <li class="item">Class Styles - The CSS styles that are applied to one or more element using the class attribute.</li>
+    </ul>
+</div>
+<div class="section example">
+    <h2>Example 1 </h2>
+    <!--Example starts here -->
+    <div style="border:2px solid red; background-color: azure;">
+        <div class="dispBlock">John</div>
+        <div class="dispInline">Max</div>
+        <div class="dispInline">Smith</div>
+    </div>
+    <!--Example end here -->
+
+    <div class="section example-description">
+        <ul>
+            <li class="item">Inline Style: Red border is provided as inline style.</li>
+            <li class="item">Class Style: dispBlock and dispInline are css styles. </li>
+        </ul>
+    </div>
+</div>
+
+<div class="section example">
+    <h2>Example 2 </h2>
+    <!--Example starts here -->
+    <div id="divSection">
+        <div class="paddingText">John</div>
+        <div>Max</div>
+        <div class="marginText">Smith</div>
+    </div>
+    <!--Example end here -->
+
+    <div class="section example-description">
+        <ul>
+            <li class="item">Padding is applied as 15px for John.</li>
+            <li class="item">Margin is applied as 10px for Smith.</li>
+            <li class="item">Width is applied as 80% for the div.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section example">
+    <h2>Example 3 </h2>
+    <!--Example starts here -->
+    <div style="display: inline; border:1px solid red;">
+        <div>John</div>
+        <div>Max</div>
+        <div>Smith</div>
+    </div>
+    <!--Example end here -->
+
+    <div class="section example-description">
+        <ul>
+            <li class="item">Padding is applied as 15px for John.</li>
+            <li class="item">Margin is applied as 10px for Smith.</li>
+            <li class="item">Width is applied as 80% for the div.</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
