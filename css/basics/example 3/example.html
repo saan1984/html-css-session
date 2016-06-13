@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../../../assets/theme.css">
+    <style type="text/css">
+    /* Universal Selector */
+    /*    *{
+        color:black;
+        font-size:20px;
+    }*/
+
+    div{
+        color:red;
+    }
+
+    div h2{
+        color:black;
+    }
+
+    #exampleData p >span {
+        color:blueviolet;
+    }
+
+    .spanColor{
+        color:black !important;
+    }
+
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>CSS (Cascading Style Sheets) Specificity</h1>
+</div>
+<div class="section description">
+    <ul>
+        <li class="item">Here we'll cover CSS Specificity in detail.</li>
+        <li class="item">!important Hack or Inline Style</li>
+    </ul>
+</div>
+<div class="section example">
+    <h2>Example 1 </h2>
+    <!--Example starts here -->
+    <div id="exampleData">
+        <p>This is my paragraph1. This is my paragraph1. <span class="spanColor">This is span in paragraph 1. </span> This is my paragraph1. This is my paragraph1.</p>
+        <p>This is my paragraph2. This is my paragraph2. This is my paragraph2. <span>This is span in paragraph 2. </span></p>
+        <span>This is span too.</span><br/>
+        <div>This is div1. This is div1. This is div1. </div>
+    </div>
+    <!--Example end here -->
+
+    <div class="section example-description">
+        <ul>
+            <li class="item">Specificity Calculation - StyleAttribute(Inline Style) => ID => Class,PsuedoClass,attribute => elements.</li>
+            <li class="item">If the element has inline styling, that automatically wins. <br/>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
