@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../../../assets/theme.css">
+    <style type="text/css">
+        .myFonts{
+            font-family: "Century Gothic";
+            font-weight: bold;
+            font-size: 16px;
+            font-style: italic;
+        }
+
+        .myTexts{
+            text-align: center;
+            text-decoration: underline;
+            font-size: 14px;
+            background-color: #f98110;
+            color: #ffffff;
+        }
+
+        #divPos1{
+            top:0;
+            left:0;
+            postion:absolute;
+            border:2px solid red;
+            width:100px;
+            height:50px;
+        }
+
+        #divPos2{
+            top:0;
+            left:30px;
+            postion:relative;
+            border:2px solid green;
+            width:100px;
+            height:50px;
+            z-index:1;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>More of CSS (Cascading Style Sheets)</h1>
+</div>
+<div class="section description">
+    <ul>
+        <li class="item">Here we'll cover the styles - Fonts, Texts, Color, Background</li>
+        <li class="item">Use multiple CSS classes</li>
+        <li class="item">We'll also cover the properties like z-index, position</li>
+    </ul>
+</div>
+<div class="section example">
+    <h2>Example 1 </h2>
+    <!--Example starts here -->
+    <div class="myFonts">
+        <p>This is my paragraph. This is my paragraph. This is my paragraph. This is my paragraph.</p>
+    </div>
+    <!--Example end here -->
+
+    <div class="section example-description">
+        <ul>
+            <li class="item">Font Styles have applied here.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section example">
+    <h2>Example 2 </h2>
+    <!--Example starts here -->
+    <div class="myTexts myFonts">
+      <span>This is span. This is span. This is span.</span>
+    </div>
+    <!--Example end here -->
+
+    <div class="section example-description">
+        <ul>
+            <li class="item">Text Styles have applied here.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section example">
+    <h2>Example 3 </h2>
+    <!--Example starts here -->
+    <div id="divPos1">
+        <div>Div 11</div>
+        <div>Div 12</div>
+    </div>
+
+    <div id="divPos2">
+        <div>Div 21</div>
+        <div>Div 22</div>
+    </div>
+    <!--Example end here -->
+
+    <div class="section example-description">
+        <ul>
+            <li class="item">Text Styles have applied here.</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
