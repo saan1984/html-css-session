@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../../../assets/theme.css">
+    <style>
+        .container{
+            height:100px;
+            border: 1px solid red;
+        }
+        .student-container-1{
+            display: flex;
+            justify-content: space-between;
+        }
+        .student{
+            background:orange;
+        }
+        .john{
+            order:3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Flex Order</h1>
+</div>
+<div class="section description">
+    <ul>
+        <li class="item">By default the flex item ordered based on the HTML source code.</li>
+        <li class="item">The order property controls the order in which they appear in the flex container.</li>
+    </ul>
+</div>
+<div class="section example">
+    <h2>Example1: ordering elements</h2>
+    <!--Example starts here -->
+    <div class="container student-container-1">
+        <div class="student john">John</div>
+        <div class="student max">Max</div>
+        <div class="student smith">Smith</div>
+    </div>
+    <!--Example end here -->
+</div>
+<div class="section example-description">
+    <ul>
+        <li class="item">the source code order is john, Max and Smith </li>
+        <li class="item">we have modified the order of john to 3, which result in rendering the the john in 3rd position.</li>
+    </ul>
+</div>
+</body>
+</html>

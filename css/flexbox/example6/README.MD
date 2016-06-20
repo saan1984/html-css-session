@@ -1,1 +1,1 @@
-#Example 6 : Flex grow and shrink
+#Example 6 : Flex grow
