@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../../../assets/theme.css">
+    <title>Welcome to Bootcamp</title>
+    <style type=”text/css”>
+        h1 {color:red}
+    </style>
+</head>
+
+<body>
+<div class="header">
+    <h1>Variable & Data Types</h1>
+</div>
+
+<div class="section description">
+    <ul>
+        <li class="item">Javascript variable can hold many data types like number, string, array, object etc.</li>
+        <li class="item"><b>var</b> is used to create a variable.</li>
+        <li class="item">JavaScript has <b>dynamic types</b>. The same variable can be used as different type.</li>
+    </ul>
+</div>
+<div class="section example">
+    <h2>Example 1</h2>
+    <!--Example starts here -->
+    <p id="message1"></p>
+    <p id="message2"></p>
+    <p id="message3"></p>
+    <script>
+        var age = 15;    // Number
+        var name = "Johnson";  // String
+        var bootcamp = ["HTML", "CSS", "JavaScript"];  // Array
+        var topics = {html:"HTML & HTML 5", css:"CSS and SAAS", js:"JS Part 1 & Part 2"};    // Object
+
+        var result = age + name;
+        document.getElementById("message1").innerHTML = result;
+
+        result = age + 5 + name;
+        document.getElementById("message2").innerHTML = result;
+
+        result = name + age + 5;
+        document.getElementById("message3").innerHTML = result;
+
+    </script>
+    <!--Example end here -->
+
+    <div class="section example-description">
+        <ul>
+            <li class="item">When adding a number and a string, JavaScript will treat the number as a string. </li>
+            <li class="item">JavaScript evaluates expressions from left to right.</li>
+            <li class="item">If the first operand is a string, all operands are treated as strings.</li>
+
+        </ul>
+    </div>
+</div>
+
+<div class="section example">
+    <h2>Example 2</h2>
+    <!--Example starts here -->
+    <script>
+        var x;  // x is undefined now
+        var x = 5; // x is a Number now
+        var x = "Bootcamp"; // x is a String now
+    </script>
+    <!--Example end here -->
+
+    <div class="section example-description">
+        <ul>
+            <li class="item">throwing 'division by zero' and 'not a number' errors.</li>
+            <li class="item">finally is executed irrespective of the result.</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
