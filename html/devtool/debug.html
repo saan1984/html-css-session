@@ -1,0 +1,14 @@
+<html>
+  <title></title>
+  <script>
+    i = 0;
+    function setDateTime() {
+      document.getElementById("status").innerHTML = "<div>" + new Date() + "</div><div><br>Index = " + (i++) + "</div>";
+    }
+  </script>
+  <body onload="setInterval(setDateTime, 1000);">
+    <div>
+      <div id="status" style="color:red;font-size:25px;">Current Date And Time</div>
+    </div>
+  </body>
+</html>
