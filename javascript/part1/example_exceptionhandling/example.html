@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../../../assets/theme.css">
+    <title>Welcome to Bootcamp</title>
+    <style type=”text/css”>
+        h1 {color:red}
+    </style>
+</head>
+
+<body>
+<div class="header">
+    <h1>Exception Handling</h1>
+</div>
+
+<div class="section description">
+    <ul>
+        <li class="item">The <b>try</b> statement lets you test a block of code for errors.</li>
+        <li class="item">The <b>catch</b> statement lets you handle the error.</li>
+        <li class="item">The <b>throw</b> statement lets you create custom errors.</li>
+        <li class="item">The <b>finally</b> statement lets you execute code, after try and catch, regardless of the result.</li>
+    </ul>
+</div>
+<div class="section example">
+    <h2>Example 1</h2>
+    <!--Example starts here -->
+    <p id="test"></p>
+    <script>
+        try {
+            adddlert("Hello World!!");
+        }
+        catch(ex) {
+            document.getElementById("test").innerHTML = ex.message;
+        }
+    </script>
+    <!--Example end here -->
+
+    <div class="section example-description">
+        <ul>
+            <li class="item">adddlert is typo error in the try block i.e. its a valid function name.</li>
+            <li class="item">catch block catches the error.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section example">
+    <h2>Example 2</h2>
+    <!--Example starts here -->
+    <input id="number1" type="text" min="5" max="10" />
+    <input id="number2" type="text" min="5" max="10" />
+    <input type="button" value="Divide" onclick="division();" />
+    <p id="division">Division is = </p>
+    <p id="message">???</p>
+    <script>
+        function division() {
+            var message, x, y, division;
+            message = document.getElementById("message");
+            division = document.getElementById("division");
+            message.innerHTML = "???";
+            division.innerHTML = "";
+
+            x = document.getElementById("number1").value;
+            y = document.getElementById("number2").value;
+            try {
+                if(y == 0) throw "division by zero !!";
+                if(isNaN(x) || isNaN(y)) throw "not a number !!";
+                x = Number(x);
+                y = Number(y);
+                division.innerHTML = x/y;
+            }
+            catch(err) {
+                division.innerHTML = "Error: " + err + ".";
+            }
+            finally {
+                message.innerHTML = "Finally !!!";
+            }
+        }
+    </script>
+    <!--Example end here -->
+
+    <div class="section example-description">
+        <ul>
+            <li class="item">throwing 'division by zero' and 'not a number' errors.</li>
+            <li class="item">finally is executed irrespective of the result.</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
+</html>
